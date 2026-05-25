@@ -1,5 +1,4 @@
 import React from "react";
-import Iphone from "images/iphone14.webp";
 
 export default function ProductList() {
    const addToCart = (product) => {
