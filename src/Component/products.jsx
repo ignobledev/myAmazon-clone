@@ -1,4 +1,7 @@
 import React from "react";
+import leatherbag from "./images/leatherbag.jpg";
+import watch from "./images/watch.avif";
+import iphone from "./images/ipone.avif";
 
 export default function ProductList() {
    const addToCart = (product) => {
@@ -15,19 +18,20 @@ export default function ProductList() {
         id: 1,
         name: "iPhone 14",
         price: 69999,
-        image:"Iphone"
+        image:iphone
+        
       },
       {
         id: 2,
         name: "Samsung Galaxy Watch",
         price: 19999,
-        image: "https://via.placeholder.com/200"
+        image:watch
       },
       {
         id: 3,
-        name: "Sony Headphones",
+        name: "leather bags",
         price: 4999,
-        image: "https://via.placeholder.com/200"
+        image: leatherbag
       }
     ],
 
@@ -36,7 +40,7 @@ export default function ProductList() {
         id: 4,
         name: "Men T-Shirt",
         price: 799,
-        image: "https://via.placeholder.com/200"
+        image: "https://unsplash.com/photos/a-man-in-a-tan-shirt-and-black-pants-_NTxalBDieo"
       },
       {
         id: 5,
