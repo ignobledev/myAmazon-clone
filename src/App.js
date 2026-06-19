@@ -1,7 +1,7 @@
 
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-
+import Carousel from "./Component/corousel";
 import Navbar from "./Component/Navbar";
 import Signup from "./Component/signup";
 import Signin from "./Component/signin";
@@ -12,6 +12,9 @@ import  Contact from "./Component/contact"
 import About from "./Component/about"
 function homes() {
   return <h1>Home Page</h1>;
+  <>
+      <Carousel />
+    </>
 }
 
 export default function App() {
@@ -20,6 +23,7 @@ export default function App() {
       <Navbar />
 
       <Routes>
+        <Route path="/"element={<Home/>}/>
         <Route path="/cart" element={<Cart/>}/>
         <Route path="/home" element={<Home />} />
         <Route path="/signup" element={<Signup />} />
